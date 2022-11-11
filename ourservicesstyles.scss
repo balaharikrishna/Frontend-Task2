@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0 15%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.background-image {
+    background: url('./Images/bg.jpg') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.Grid-TopRightMenu {
+    display: grid;
+    grid-template-columns: auto;
+    position: relative;
+    padding-bottom:45px;
+
+    .TopMenus {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(10, 44, 68, 0.5);
+        color: white;
+        width: 230px;
+        height: 25px;
+        cursor: pointer;
+
+        .TopMenus-span {
+            border-right: 1px solid white;
+            padding: 0 2%;
+            font-size: 55%;
+
+            .TopMenusLink {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .TopMenus-span1 {
+            padding-left:2%;
+            font-size: 55%;
+
+            .TopMenusLink {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.GridNavSection {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background-color: rgba(1, 15, 29, 0.8);
+    border: 1px solid rgba(23, 45, 69);
+    border-style: ridge;
+    outline: 1px solid rgba(178, 189, 181, 0.2);
+    outline-offset: -5px;
+
+    .logosection {
+        position: relative;
+
+        .logolink {
+            .logo {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 180px;
+            }
+        }
+    }
+
+    .navoptionsGrid {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .navoptionsGrid>.navoptionsdiv {
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+
+        .nav-a,.nav-aLast {
+            color: rgba(170, 202, 225, 255);
+            text-decoration: none;
+
+            .delimeter ,.delimeterThird {
+                cursor: pointer;
+                font-size: 15px;
+                font-weight: normal;
+                padding: 3px 15px;
+                background: transparent url(./Images/delimeter.png) no-repeat right;
+            }
+
+            .delimeterThird {
+                background-color: rgb(72, 104, 129, 0.7);
+                border-radius: 5px;
+                color: white;
+            }
+        }
+
+        .nav-aLast {
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: normal;
+            padding: 3px 0 3px 15px;
+        }
+
+    }
+
+}
+
+//MainContentBody
+.MainContent {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: rgba(1, 15, 29, 0.8);
+    border: 1px solid rgba(23, 45, 69);
+    border-style: ridge;
+    outline: 1px solid rgba(178, 189, 181, 0.2);
+    outline-offset: -5px;
+    padding: 15px;
+    grid-gap: 15px;
+    margin-top: 25px;
+
+    .MainContentGrid1 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .tileimages {
+            padding-bottom:10px;
+        }
+
+        .MaincontentLinkdiv {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0 ;
+            border-top: 1.5px solid #404649;
+            border-bottom: 1.5px solid #404649;
+        }
+    }
+
+    .MainContentGrid2 {
+        margin-right:5%;
+    }
+
+    .MaincontentPara {
+        color: white;
+        font-size: 80%;
+    }
+
+    .MaincontentLink {
+        color: rgba(148, 193, 220, 255);
+        font-size: 80%;
+    }
+
+    .MainContentInnerGrids {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+
+        .MainHeading {
+            .heading {
+                color: rgb(148, 193, 220);
+                margin: 0px 0; //overiding
+            }
+        }
+
+        .MainParagraph {
+            .MaincontentPara {
+                color: white;
+                font-size: 80%;
+
+                .inlineparalinks {
+                    color: rgba(170, 202, 225, 255);
+                }
+            }
+        }
+
+        .links {
+            .links-ul {
+                .ul-li {
+                    color: white;
+
+                    .ul-li-a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 80%;
+                    }
+                }
+            }
+        }
+
+        .RightBottomSection {
+            border-top: 1.5px solid #404649;
+            border-bottom: 1.5px solid #404649;
+            background-color: rgba(16, 34, 58, 1.0);
+
+            .bottomParas {
+                cursor: pointer;
+                color: white;
+                font-size: 80%;
+                padding-left:40px;
+            }
+
+            .bottomParas1 {
+                cursor: pointer;
+                color: white;
+                font-size: 65%;
+                margin: 0 0 15px 40px;
+                width: 34%;
+                background: linear-gradient(rgb(31, 94, 117), 0, rgb(31, 94, 117), transparent);
+                padding: 1px 5px 2px 5px;
+                border-radius: 5px;
+                border: 1px solid #0e3851;
+
+                .rightarrow {
+                    width: 5px;
+                    padding-left:5px;
+                }
+            }
+
+        }
+    }
+
+}
+
+.Gridfooter {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: rgba(41, 65, 109, 255);
+    margin: 5px 0 10px 0;
+
+    .footerdivPara {
+        .footerPara {
+            float: right;
+            color: white;
+            font-size: 65%;
+        }
+    }
+
+    .footerdivLinks {
+        .footerParaLinks {
+            margin: 5px;
+
+            .footerListLink1 {
+                padding: 0 5px 0 10px;
+                border-right: 1px solid white;
+            }
+
+            .footerListLink2,.footerListLink1 {
+                color: white;
+                font-size: 65%;
+            }
+        }
+
+
+    }
+
+
+}

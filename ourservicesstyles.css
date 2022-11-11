@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  margin: 0 15%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.background-image {
+  background: url("./Images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.Grid-TopRightMenu {
+  display: grid;
+  grid-template-columns: auto;
+  position: relative;
+  padding-bottom: 45px;
+}
+.Grid-TopRightMenu .TopMenus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(10, 44, 68, 0.5);
+  color: white;
+  width: 230px;
+  height: 25px;
+  cursor: pointer;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span {
+  border-right: 1px solid white;
+  padding: 0 2%;
+  font-size: 55%;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span .TopMenusLink {
+  text-decoration: none;
+  color: white;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span1 {
+  padding-left: 2%;
+  font-size: 55%;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span1 .TopMenusLink {
+  text-decoration: none;
+  color: white;
+}
+
+.GridNavSection {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  background-color: rgba(1, 15, 29, 0.8);
+  border: 1px solid rgb(23, 45, 69);
+  border-style: ridge;
+  outline: 1px solid rgba(178, 189, 181, 0.2);
+  outline-offset: -5px;
+}
+.GridNavSection .logosection {
+  position: relative;
+}
+.GridNavSection .logosection .logolink .logo {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+}
+.GridNavSection .navoptionsGrid {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+  color: rgb(170, 202, 225);
+  text-decoration: none;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterThird, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeter, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeterThird {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 3px 15px;
+  background: transparent url(./Images/delimeter.png) no-repeat right;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterThird, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeterThird {
+  background-color: rgba(72, 104, 129, 0.7);
+  border-radius: 5px;
+  color: white;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 3px 0 3px 15px;
+}
+
+.MainContent {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: rgba(1, 15, 29, 0.8);
+  border: 1px solid rgb(23, 45, 69);
+  border-style: ridge;
+  outline: 1px solid rgba(178, 189, 181, 0.2);
+  outline-offset: -5px;
+  padding: 15px;
+  grid-gap: 15px;
+  margin-top: 25px;
+}
+.MainContent .MainContentGrid1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.MainContent .MainContentGrid1 .tileimages {
+  padding-bottom: 10px;
+}
+.MainContent .MainContentGrid1 .MaincontentLinkdiv {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  border-top: 1.5px solid #404649;
+  border-bottom: 1.5px solid #404649;
+}
+.MainContent .MainContentGrid2 {
+  margin-right: 5%;
+}
+.MainContent .MaincontentPara {
+  color: white;
+  font-size: 80%;
+}
+.MainContent .MaincontentLink {
+  color: rgb(148, 193, 220);
+  font-size: 80%;
+}
+.MainContent .MainContentInnerGrids {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+.MainContent .MainContentInnerGrids .MainHeading .heading {
+  color: rgb(148, 193, 220);
+  margin: 0px 0;
+}
+.MainContent .MainContentInnerGrids .MainParagraph .MaincontentPara {
+  color: white;
+  font-size: 80%;
+}
+.MainContent .MainContentInnerGrids .MainParagraph .MaincontentPara .inlineparalinks {
+  color: rgb(170, 202, 225);
+}
+.MainContent .MainContentInnerGrids .links .links-ul .ul-li {
+  color: white;
+}
+.MainContent .MainContentInnerGrids .links .links-ul .ul-li .ul-li-a {
+  color: white;
+  text-decoration: none;
+  font-size: 80%;
+}
+.MainContent .MainContentInnerGrids .RightBottomSection {
+  border-top: 1.5px solid #404649;
+  border-bottom: 1.5px solid #404649;
+  background-color: rgb(16, 34, 58);
+}
+.MainContent .MainContentInnerGrids .RightBottomSection .bottomParas {
+  cursor: pointer;
+  color: white;
+  font-size: 80%;
+  padding-left: 40px;
+}
+.MainContent .MainContentInnerGrids .RightBottomSection .bottomParas1 {
+  cursor: pointer;
+  color: white;
+  font-size: 65%;
+  margin: 0 0 15px 40px;
+  width: 34%;
+  background: linear-gradient(rgb(31, 94, 117), 0, rgb(31, 94, 117), transparent);
+  padding: 1px 5px 2px 5px;
+  border-radius: 5px;
+  border: 1px solid #0e3851;
+}
+.MainContent .MainContentInnerGrids .RightBottomSection .bottomParas1 .rightarrow {
+  width: 5px;
+  padding-left: 5px;
+}
+
+.Gridfooter {
+  display: grid;
+  grid-template-columns: auto auto;
+  background: rgb(41, 65, 109);
+  margin: 5px 0 10px 0;
+}
+.Gridfooter .footerdivPara .footerPara {
+  float: right;
+  color: white;
+  font-size: 65%;
+}
+.Gridfooter .footerdivLinks .footerParaLinks {
+  margin: 5px;
+}
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink1 {
+  padding: 0 5px 0 10px;
+  border-right: 1px solid white;
+}
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink2, .Gridfooter .footerdivLinks .footerParaLinks .footerListLink1 {
+  color: white;
+  font-size: 65%;
+}/*# sourceMappingURL=ourservicesstyles.css.map */
