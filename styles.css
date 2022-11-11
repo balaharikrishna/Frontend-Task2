@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  margin: 0 15% 0 15%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.background-image {
+  background: url("./Images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.Grid-TopRightMenu {
+  display: grid;
+  grid-template-columns: auto;
+  position: relative;
+  padding: 0 0 45px 0;
+}
+.Grid-TopRightMenu .TopMenus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(10, 44, 68, 0.5);
+  color: white;
+  width: 230px;
+  height: 25px;
+  cursor: pointer;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span {
+  border-right: 1px solid white;
+  padding: 0 2% 0 2%;
+  font-size: 55%;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span .TopMenusLink {
+  text-decoration: none;
+  color: white;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span1 {
+  padding: 0 0 0 2%;
+  font-size: 55%;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span1 .TopMenusLink {
+  text-decoration: none;
+  color: white;
+}
+
+.GridNavSection {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  background-color: rgba(1, 15, 29, 0.8);
+  border: 1px solid rgb(23, 45, 69);
+  border-style: ridge;
+  outline-color: 0px;
+  outline: 1px solid rgba(178, 189, 181, 0.2);
+  outline-offset: -5px;
+}
+.GridNavSection .logosection {
+  position: relative;
+}
+.GridNavSection .logosection .logolink .logo {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+}
+.GridNavSection .navoptionsGrid {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv {
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+  color: rgb(170, 202, 225);
+  text-decoration: none;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeter, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeterfirst {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 3px 15px;
+  background: transparent url(./Images/delimeter.png) no-repeat right;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeterfirst {
+  background-color: rgba(72, 104, 129, 0.7);
+  border-radius: 5px;
+  color: white;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 3px 0 3px 15px;
+}
+
+.Grid-TransperantContent {
+  display: grid;
+  grid-template-columns: auto;
+  background: linear-gradient(transparent, rgba(1, 15, 29, 0.5), transparent, rgba(1, 15, 29, 0.5));
+}
+.Grid-TransperantContent .TransparentP {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  font-size: 30px;
+  padding: 0 10px 0 10px;
+  letter-spacing: 5px;
+}
+
+.MainContent {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  background-color: rgba(1, 15, 29, 0.8);
+  border: 1px solid rgb(23, 45, 69);
+  border-style: ridge;
+  outline-color: 0px;
+  outline: 1px solid rgba(178, 189, 181, 0.2);
+  outline-offset: -5px;
+  padding: 1%;
+}
+.MainContent .MainContentGrid {
+  padding: 10px;
+}
+.MainContent .MainContentGrid .tileimages {
+  width: 100%;
+}
+.MainContent .MainContentGrid .MaincontentPara {
+  color: white;
+  font-size: 80%;
+}
+.MainContent .MainContentGrid .MaincontentLink {
+  color: rgb(148, 193, 220);
+  font-size: 80%;
+}
+
+.Gridfooter {
+  display: grid;
+  grid-template-columns: auto auto;
+  background: rgb(41, 65, 109);
+  margin: 5px 0 10px 0;
+}
+.Gridfooter .footerdivPara .footerPara {
+  float: right;
+  color: white;
+  font-size: 65%;
+}
+.Gridfooter .footerdivLinks .footerParaLinks {
+  margin: 5px;
+}
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink1 {
+  padding: 0 5px 0 10px;
+  border-right: 1px solid white;
+}
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink1, .Gridfooter .footerdivLinks .footerParaLinks .footerListLink2 {
+  color: white;
+  font-size: 65%;
+}/*# sourceMappingURL=styles.css.map */
