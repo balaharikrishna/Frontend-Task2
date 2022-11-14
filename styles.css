@@ -1,0 +1,138 @@
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeterfirst {
+  cursor: pointer;
+  font-weight: normal;
+  padding: 3px 15px;
+  background: transparent url(./Images/delimeter.png) no-repeat right;
+  background-color: rgba(72, 104, 129, 0.7);
+  border-radius: 5px;
+  color: white;
+}
+
+.Grid-TransperantContent {
+  display: grid;
+  grid-template-columns: auto;
+  background: linear-gradient(transparent, rgba(1, 15, 29, 0.5), transparent, rgba(1, 15, 29, 0.5));
+}
+.Grid-TransperantContent .TransparentP {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  padding: 0 10px;
+  letter-spacing: 5px;
+}
+
+.MainContent {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  background-color: rgba(1, 15, 29, 0.8);
+  border: 1px solid rgb(23, 45, 69);
+  border-style: ridge;
+  outline: 1px solid rgba(178, 189, 181, 0.2);
+  outline-offset: -5px;
+  padding: 1%;
+}
+.MainContent .MainContentGrid {
+  padding: 10px;
+}
+.MainContent .MainContentGrid .tileimages {
+  width: 100%;
+}
+.MainContent .MainContentGrid .MaincontentPara {
+  color: white;
+}
+.MainContent .MainContentGrid .MaincontentLink {
+  color: rgb(148, 193, 220);
+}
+
+@media only screen and (min-width: 1015px) {
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
+    font-size: 15px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1015px) {
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
+    font-size: 12px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 660px) and (max-width: 850px) {
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
+    font-size: 12px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 660px) {
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
+    font-size: 11px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 520px) {
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
+    font-size: 11px;
+    background-image: none;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 784px) {
+  .Grid-TransperantContent .TransparentP {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 660px) and (max-width: 784px) {
+  .Grid-TransperantContent .TransparentP {
+    font-size: 23px;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 660px) {
+  .Grid-TransperantContent .TransparentP {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 520px) {
+  .Grid-TransperantContent .TransparentP {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .MainContent .MainContentGrid .MaincontentPara {
+    font-size: 80%;
+    line-height: 20px;
+  }
+  .MainContent .MainContentGrid .MaincontentLink {
+    font-size: 80%;
+  }
+}
+@media only screen and (min-width: 555px) and (max-width: 850px) {
+  .MainContent .MainContentGrid .MaincontentPara {
+    font-size: 60%;
+    line-height: 17px;
+  }
+  .MainContent .MainContentGrid .MaincontentLink {
+    font-size: 60%;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 555px) {
+  .MainContent {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: none;
+  }
+  .MainContent .MainContentGrid .MaincontentPara {
+    font-size: 60%;
+    line-height: 25px;
+  }
+  .MainContent .MainContentGrid .MaincontentLink {
+    font-size: 60%;
+  }
+}/*# sourceMappingURL=styles.css.map */

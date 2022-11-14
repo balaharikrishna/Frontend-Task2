@@ -1,0 +1,408 @@
+$whitecolor: white;
+.GridNavSection {
+    .navoptionsGrid>.navoptionsdiv {
+        .nav-a,.nav-aLast {
+            .delimeterThird {
+                cursor: pointer;
+                font-weight: normal;
+                padding: 3px 15px;
+                background: transparent url(./Images/delimeter.png) no-repeat right;
+                background-color: rgb(72, 104, 129, 0.7);
+                border-radius: 5px;
+                color: $whitecolor;
+
+            }
+        }
+    }
+}
+//MainContentBody
+.MainContent {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: rgba(1, 15, 29, 0.8);
+    border: 1px solid rgba(23, 45, 69);
+    border-style: ridge;
+    outline: 1px solid rgba(178, 189, 181, 0.2);
+    outline-offset: -5px;
+    padding: 15px;
+    grid-gap: 15px;
+    margin-top: 25px;
+
+    .MainContentGrid1 {
+        display: grid;
+        grid-template-rows: auto auto auto;
+
+        .tileimages {
+            padding-bottom:10px;
+            width: 100%;
+        }
+
+        .MaincontentLinkdiv {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0 ;
+            border-top: 1.5px solid #404649;
+            border-bottom: 1.5px solid #404649;
+        }
+    }
+
+    .MainContentGrid2 {
+        margin-right:5%;
+    }
+
+    .MaincontentPara {
+        color: $whitecolor;
+        font-size: 80%;
+    }
+
+    .MaincontentLink {
+        color: rgba(148, 193, 220, 255);
+        font-size: 80%;
+    }
+    a:hover{
+    text-decoration-color:rgb(255,255,255,0.8) ;
+    }
+
+    .MainContentInnerGrids {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+
+        .MainHeading {
+            .heading {
+                color: rgb(148, 193, 220);
+                margin: 0px 0; //overiding
+            }
+        }
+
+        .MainParagraph {
+            .MaincontentPara {
+                color: $whitecolor;
+                font-size: 80%;
+
+                .inlineparalinks {
+                    color: rgba(170, 202, 225, 255);
+                }
+            }
+        }
+
+        .links {
+            margin-top: -30px;
+            .links-ul {
+                .ul-li {
+                    color: white;
+
+                    .ul-li-a {
+                        color: $whitecolor;
+                        text-decoration: none;
+                        font-size: 80%;
+                    }
+                }
+            }
+        }
+
+        .RightBottomSection {
+            border-top: 1.5px solid #404649;
+            border-bottom: 1.5px solid #404649;
+            background-color: rgba(16, 34, 58, 1.0);
+
+            .bottomParas {
+                cursor: pointer;
+                color: $whitecolor;
+                font-size: 80%;
+                padding-left:40px;
+            }
+
+            .bottomParas1 {
+                cursor: pointer;
+                color: $whitecolor;
+                font-size: 65%;
+                margin: 0 0 15px 40px;
+                width: fit-content;
+                background: linear-gradient(rgb(31, 94, 117), 0, rgb(31, 94, 117), transparent);
+                padding: 1px 5px 2px 5px;
+                border-radius: 5px;
+                border: 1px solid #0e3851;
+
+                .rightarrow {
+                    width: 5px;
+                    padding-left:5px;
+                }
+            }
+
+        }
+    }
+
+}
+//navbar section
+@media only screen and (min-width: 1015px){
+    .GridNavSection {
+        .navoptionsGrid>.navoptionsdiv {
+            .nav-a{
+                .delimeterThird {
+                    font-size: 15px;
+                }
+            }
+            .nav-aLast{
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 850px) and (max-width: 1015px)  {
+    .GridNavSection {
+        .navoptionsGrid>.navoptionsdiv {
+            .nav-a{
+                .delimeterThird {
+                    font-size: 12px;
+                }
+            }
+            .nav-aLast{
+                font-size: 12px;
+            }
+        }
+    } 
+}
+@media only screen and (min-width: 660px) and (max-width: 850px) {
+    .GridNavSection {
+        .navoptionsGrid>.navoptionsdiv {
+            .nav-a {
+                .delimeterThird {
+                    font-size: 12px;
+                }
+            }
+            .nav-aLast{
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 520px) and (max-width: 660px){
+    .navoptionsGrid>.navoptionsdiv {
+        .nav-a{
+            .delimeterThird {
+                font-size: 11px;
+            }
+        }
+        .nav-aLast{
+            font-size: 11px;
+        }
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 520px){
+    .navoptionsGrid>.navoptionsdiv {
+        .nav-a{
+            .delimeterThird {
+                font-size: 11px;
+                background-image: none !important;
+            }
+        }
+        .nav-aLast{
+            font-size: 11px;
+        }
+    }
+}
+
+//Main content
+@media only screen and (min-width: 1015px){
+    .MainContent {
+        .MainContentGrid1 {
+       padding: 10px 10px 100px 10px;
+        }
+        .MaincontentPara {
+            font-size: 80%;
+            line-height: 25px;
+        }
+        .MaincontentLink {
+            font-size: 80%;
+            line-height: 30px;
+        }
+        .MainContentInnerGrids {
+            .MainParagraph {
+                .MaincontentPara {
+                    font-size: 80%;
+                }
+            }
+    
+            .links {
+                .links-ul {
+                    .ul-li {    
+                        .ul-li-a {
+                            font-size: 80%;
+                        }
+                    }
+                }
+            }
+    
+            .RightBottomSection {
+                .bottomParas {
+                    font-size: 80%;
+                }
+    
+                .bottomParas1 {
+                    font-size: 65%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 660px) and (max-width: 1015px) {
+    .MainContent {
+        .MainContentGrid1 {
+            padding: 10px 10px 250px 10px;
+            .tileimages {
+              height: 80%;
+              }
+        }
+        .MaincontentPara {
+            font-size: 70%;
+            line-height: 22px;
+        }
+        .MaincontentLink {
+            font-size: 70%;
+            line-height: 30px;
+        }
+        .MainContentInnerGrids {
+            .MainHeading {
+                .heading {
+                    font-size: 18px;
+                }
+            }
+            .MainParagraph {
+                .MaincontentPara {
+                    font-size: 70%;
+                }
+            }
+    
+            .links {
+                .links-ul {
+                    .ul-li {    
+                        .ul-li-a {
+                            font-size: 70%;
+                        }
+                    }
+                }
+            }
+    
+            .RightBottomSection {
+                .bottomParas {
+                    font-size: 70%;
+                }
+    
+                .bottomParas1 {
+                    font-size: 60%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 450px) and (max-width: 660px) {
+    .MainContent {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        .MainContentGrid1 {
+            grid-template-rows: none;
+            grid-template-columns: auto auto auto;
+            grid-gap: 5%;
+            .tileimages {
+              height: 100%;
+              padding-bottom: 0px; //overriding
+              }
+        }
+        .MaincontentPara {
+            font-size: 60%;
+            line-height: 20px;
+        }
+        .MaincontentLink {
+            font-size: 60%;
+            line-height: 30px;
+        }
+        .MainContentInnerGrids {
+            .MainHeading {
+                .heading {
+                    font-size: 16px;
+                }
+            }
+            .MainParagraph {
+                .MaincontentPara {
+                    font-size: 60%;
+                }
+            }
+    
+            .links {
+                .links-ul {
+                    .ul-li {    
+                        .ul-li-a {
+                            font-size: 60%;
+                        }
+                    }
+                }
+            }
+    
+            .RightBottomSection {
+                .bottomParas {
+                    font-size: 60%;
+                }
+    
+                .bottomParas1 {
+                    font-size: 50%;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 450px) {
+    .MainContent {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        .MainContentGrid1 {
+            grid-gap: 2%;
+            .tileimages {
+              height: 100%;
+              padding-bottom: 0px; //overriding
+              }
+        }
+        .MaincontentPara {
+            font-size: 60%;
+            text-align: center;
+        }
+        .MaincontentLink {
+            font-size: 60%;
+            text-align: center;
+            line-height: 30px;
+        }
+        .MainContentInnerGrids {
+            .MainHeading {
+                .heading {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+            .MainParagraph {
+                .MaincontentPara {
+                    font-size: 60%;
+                    line-height: 25px;
+                }
+            }
+    
+            .links {
+                .links-ul {
+                    .ul-li {    
+                        .ul-li-a {
+                            font-size: 60%;
+                        }
+                    }
+                }
+            }
+    
+            .RightBottomSection {
+                .bottomParas {
+                    font-size: 60%;
+                }
+    
+                .bottomParas1 {
+                    font-size: 50%;
+                }
+            }
+        }
+    }
+}

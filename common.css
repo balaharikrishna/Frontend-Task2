@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  margin: 0 15%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.background-image {
+  background: url("./Images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.Grid-TopRightMenu {
+  display: grid;
+  grid-template-columns: auto;
+  position: relative;
+  padding-bottom: 45px;
+}
+.Grid-TopRightMenu .TopMenus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(10, 44, 68, 0.5);
+  color: white;
+  height: 25px;
+  cursor: pointer;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span {
+  border-right: 1px solid white;
+  padding: 0 2%;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span .TopMenusLink {
+  color: white;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span a:hover {
+  background-color: rgba(1, 15, 29, 0.8);
+  padding: 2px;
+  border-radius: 5px;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span1 {
+  padding-left: 2%;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span1 .TopMenusLink {
+  color: white;
+}
+.Grid-TopRightMenu .TopMenus .TopMenus-span1 a:hover {
+  background-color: rgba(1, 15, 29, 0.8);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.GridNavSection {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  background-color: rgba(1, 15, 29, 0.8);
+  border: 1px solid rgb(23, 45, 69);
+  border-style: ridge;
+  outline: 1px solid rgba(178, 189, 181, 0.2);
+  outline-offset: -5px;
+}
+.GridNavSection .logosection {
+  position: relative;
+}
+.GridNavSection .logosection .logolink .logo {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.GridNavSection .navoptionsGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv {
+  text-align: center;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv a:hover {
+  background-color: rgba(72, 104, 129, 0.7);
+  border-radius: 5px;
+  color: white;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a,
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+  color: rgb(170, 202, 225);
+  text-decoration: none;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter,
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeter {
+  cursor: pointer;
+  font-weight: normal;
+  padding-right: 15px;
+  background: transparent url(./Images/delimeter.png) no-repeat right;
+}
+.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+  cursor: pointer;
+  font-weight: normal;
+  padding-right: 15px;
+}
+
+.Gridfooter {
+  display: grid;
+  grid-template-columns: auto auto;
+  background: rgb(41, 65, 109);
+  margin: 5px 0 10px 0;
+}
+.Gridfooter .footerdivPara .footerPara {
+  float: right;
+  color: white;
+  font-size: 65%;
+}
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink1 {
+  border-right: 1px solid white;
+}
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink1,
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink2 {
+  color: white;
+}
+
+@media only screen and (min-width: 1015px) {
+  .GridNavSection .logosection .logolink .logo {
+    width: 180px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv {
+    line-height: 50px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
+    font-size: 15px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 850px) and (max-width: 1015px) {
+  .GridNavSection .logosection .logolink .logo {
+    width: 130px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv {
+    line-height: 40px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
+    font-size: 12px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 660px) and (max-width: 850px) {
+  .GridNavSection {
+    grid-template-columns: 30% 70%;
+  }
+  .GridNavSection .logosection .logolink .logo {
+    width: 130px;
+  }
+  .GridNavSection .navoptionsGrid {
+    grid-template-columns: auto auto auto;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv {
+    line-height: 30px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
+    font-size: 12px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 660px) {
+  .GridNavSection {
+    grid-template-columns: 40% 60%;
+  }
+  .GridNavSection .logosection .logolink .logo {
+    width: 140px;
+  }
+  .GridNavSection .navoptionsGrid {
+    grid-template-columns: auto auto;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv {
+    line-height: 25px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
+    font-size: 11px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 11px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 520px) {
+  .GridNavSection {
+    grid-template-rows: auto;
+    grid-template-columns: none;
+  }
+  .GridNavSection .logosection {
+    margin-top: -5%;
+  }
+  .GridNavSection .logosection .logolink .logo {
+    width: 140px;
+    position: relative;
+  }
+  .GridNavSection .navoptionsGrid {
+    grid-template-columns: none;
+    grid-template-rows: auto auto auto auto auto;
+    padding-bottom: 1%;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv {
+    line-height: 35px;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
+    font-size: 11px;
+    padding-right: 0px;
+    background: none;
+  }
+  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+    font-size: 11px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (min-width: 630px) {
+  .Gridfooter .footerdivPara .footerPara {
+    font-size: 65%;
+  }
+  .Gridfooter .footerdivLinks .footerParaLinks {
+    margin: 5px;
+  }
+  .Gridfooter .footerdivLinks .footerParaLinks .footerListLink1 {
+    padding: 0 5px 0 10px;
+  }
+  .Gridfooter .footerdivLinks .footerParaLinks .footerListLink1,
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink2 {
+    font-size: 65%;
+  }
+}
+@media only screen and (min-width: 485px) and (max-width: 630px) {
+  .Gridfooter .footerdivPara .footerPara {
+    font-size: 50%;
+  }
+  .Gridfooter .footerdivLinks .footerParaLinks {
+    margin: 0px;
+  }
+  .Gridfooter .footerdivLinks .footerParaLinks .footerListLink1 {
+    padding: 0 5px 0 10px;
+  }
+  .Gridfooter .footerdivLinks .footerParaLinks .footerListLink1,
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink2 {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 485px) {
+  .Gridfooter {
+    grid-template-rows: auto auto;
+    grid-template-columns: none;
+  }
+  .Gridfooter .footerdivPara {
+    margin-bottom: -10px;
+  }
+  .Gridfooter .footerdivPara .footerPara {
+    font-size: 50%;
+    float: none;
+    text-align: center;
+  }
+  .Gridfooter .footerdivLinks .footerParaLinks {
+    margin: 0px;
+    text-align: center;
+  }
+  .Gridfooter .footerdivLinks .footerParaLinks .footerListLink1 {
+    padding: 0 5px 0 10px;
+  }
+  .Gridfooter .footerdivLinks .footerParaLinks .footerListLink1,
+.Gridfooter .footerdivLinks .footerParaLinks .footerListLink2 {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 630px) {
+  .Grid-TopRightMenu .TopMenus {
+    width: 230px;
+  }
+  .Grid-TopRightMenu .TopMenus .TopMenus-span {
+    font-size: 55%;
+  }
+  .Grid-TopRightMenu .TopMenus .TopMenus-span1 {
+    font-size: 55%;
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 630px) {
+  .Grid-TopRightMenu .TopMenus {
+    width: 100%;
+    text-align: center;
+  }
+  .Grid-TopRightMenu .TopMenus .TopMenus-span {
+    font-size: 70%;
+  }
+  .Grid-TopRightMenu .TopMenus .TopMenus-span1 {
+    font-size: 70%;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 420px) {
+  .Grid-TopRightMenu .TopMenus {
+    width: 100%;
+    text-align: center;
+  }
+  .Grid-TopRightMenu .TopMenus .TopMenus-span {
+    font-size: 47%;
+  }
+  .Grid-TopRightMenu .TopMenus .TopMenus-span1 {
+    font-size: 47%;
+  }
+}/*# sourceMappingURL=common.css.map */
