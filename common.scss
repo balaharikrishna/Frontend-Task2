@@ -89,16 +89,12 @@ body {
     .navoptionsGrid {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
+
     }
 
     .navoptionsGrid>.navoptionsdiv {
         text-align: center;
-        a:hover{
-                background-color: rgb(72, 104, 129, 0.7);
-                border-radius: 5px;
-                color: $whitecolor;
-        }
-
+        
         .nav-a,
         .nav-aLast {
             color: rgba(170, 202, 225, 255);
@@ -109,13 +105,25 @@ body {
                 font-weight: normal;
                 padding-right: 15px;
                 background: transparent url(./Images/delimeter.png) no-repeat right;
+
+            }
+            .delimeter:hover{
+                background-color: rgb(72, 104, 129, 0.7);
+                border-radius: 5px;
+                color: $whitecolor;
             }
         }
 
         .nav-aLast {
             cursor: $pointer;
             font-weight: normal;
-            padding-right: 15px;
+            text-align: center;
+            .nodelimeter:hover{
+                background-color: rgb(72, 104, 129, 0.7);
+                border-radius: 5px;
+                color: $whitecolor;
+                margin-right: 5px;
+            }
         }
 
     }
@@ -169,16 +177,16 @@ body {
         }
 
         .navoptionsGrid>.navoptionsdiv {
-            line-height: 50px;
+            line-height: 22px;
 
             .nav-a {
                 .delimeter {
-                    font-size: 15px;
+                    font-size: 14px;
                 }
             }
 
             .nav-aLast {
-                font-size: 15px;
+                font-size: 14px;
             }
         }
     }
@@ -195,7 +203,7 @@ body {
         }
 
         .navoptionsGrid>.navoptionsdiv {
-            line-height: 40px;
+            line-height: 25px;
 
             .nav-a {
                 .delimeter {
@@ -224,10 +232,11 @@ body {
 
         .navoptionsGrid {
             grid-template-columns: auto auto auto;
+            padding-right: 8px;
         }
 
         .navoptionsGrid>.navoptionsdiv {
-            line-height: 30px;
+            line-height: 20px;
 
             .nav-a {
                 .delimeter {
@@ -237,6 +246,7 @@ body {
 
             .nav-aLast {
                 font-size: 12px;
+                
             }
         }
     }
@@ -256,10 +266,12 @@ body {
 
         .navoptionsGrid {
             grid-template-columns: auto auto;
+            padding-right: 8px;
         }
 
         .navoptionsGrid>.navoptionsdiv {
-            line-height: 25px;
+            line-height: 20px;
+            height: 33px;
 
             .nav-a {
                 .delimeter {
@@ -293,23 +305,28 @@ body {
         .navoptionsGrid {
             grid-template-columns: none;
             grid-template-rows: auto auto auto auto auto;
-            padding-bottom: 1%;
+            padding:0 8px 1% 8px ;
         }
 
         .navoptionsGrid>.navoptionsdiv {
-            line-height: 35px;
+            line-height: 25px;
 
             .nav-a {
                 .delimeter {
                     font-size: 11px;
                     padding-right: 0px;
-                    background: none
+                    background: none;
+                    margin: 2% 35% 0 35%;
                 }
             }
-
             .nav-aLast {
-                font-size: 11px;
-                padding-right: 0px;
+                .nodelimeter{
+                    font-size: 11px;
+                    margin: 2% 35% 2% 35%;
+                }
+                .nodelimeter:hover{
+                    margin-right: 115px;
+                }
             }
         }
     }
