@@ -1,16 +1,32 @@
-$whitecolor: white;
+@import "./variables.scss";
 .GridNavSection {
-    .navoptionsGrid>.navoptionsdiv {
-        .nav-a,.nav-aLast {
-            .delimeterThird {
-                cursor: pointer;
-                font-weight: normal;
-                padding: 3px 15px;
-                background: transparent url(./Images/delimeter.png) no-repeat right;
-                background-color: rgb(72, 104, 129, 0.7);
-                border-radius: 5px;
-                color: $whitecolor;
-
+    .navoptionsGrid{
+        .navoptionsdiv:nth-child(3) {
+            .nav-a{
+                .delimeter{
+                    cursor: pointer;
+                    font-weight: normal;
+                    padding-right: 15px;
+                    background: transparent url(./Images/delimeter.png) no-repeat right;
+                    background-color: rgb(72, 104, 129, 0.7);
+                    border-radius: 5px;
+                    color: $whitecolor;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 100px) and (max-width: 520px) {
+    .GridNavSection {
+        .navoptionsGrid{
+            .navoptionsdiv:nth-child(3) {
+                .nav-a{
+                    .delimeter{
+                        padding-right: 0px ;
+                       margin: 2% 35% 0 35%;
+                       background-image: none;
+                    }
+                }
             }
         }
     }
@@ -112,7 +128,7 @@ $whitecolor: white;
                 padding-left:40px;
             }
 
-            .bottomParas1 {
+            .bottomParas:last-child {
                 cursor: pointer;
                 color: $whitecolor;
                 font-size: 65%;
@@ -132,74 +148,6 @@ $whitecolor: white;
         }
     }
 
-}
-//navbar section
-@media only screen and (min-width: 1015px){
-    .GridNavSection {
-        .navoptionsGrid>.navoptionsdiv {
-            .nav-a{
-                .delimeterThird {
-                    font-size: 15px;
-                }
-            }
-            .nav-aLast{
-                font-size: 15px;
-            }
-        }
-    }
-}
-@media only screen and (min-width: 850px) and (max-width: 1015px)  {
-    .GridNavSection {
-        .navoptionsGrid>.navoptionsdiv {
-            .nav-a{
-                .delimeterThird {
-                    font-size: 12px;
-                }
-            }
-            .nav-aLast{
-                font-size: 12px;
-            }
-        }
-    } 
-}
-@media only screen and (min-width: 660px) and (max-width: 850px) {
-    .GridNavSection {
-        .navoptionsGrid>.navoptionsdiv {
-            .nav-a {
-                .delimeterThird {
-                    font-size: 12px;
-                }
-            }
-            .nav-aLast{
-                font-size: 12px;
-            }
-        }
-    }
-}
-@media only screen and (min-width: 520px) and (max-width: 660px){
-    .navoptionsGrid>.navoptionsdiv {
-        .nav-a{
-            .delimeterThird {
-                font-size: 11px;
-            }
-        }
-        .nav-aLast{
-            font-size: 11px;
-        }
-    }
-}
-@media only screen and (min-width: 100px) and (max-width: 520px){
-    .navoptionsGrid>.navoptionsdiv {
-        .nav-a{
-            .delimeterThird {
-                font-size: 11px;
-                background-image: none !important;
-            }
-        }
-        .nav-aLast{
-            font-size: 11px;
-        }
-    }
 }
 
 //Main content
@@ -238,7 +186,7 @@ $whitecolor: white;
                     font-size: 80%;
                 }
     
-                .bottomParas1 {
+                .bottomParas:last-child {
                     font-size: 65%;
                 }
             }
@@ -288,7 +236,7 @@ $whitecolor: white;
                     font-size: 70%;
                 }
     
-                .bottomParas1 {
+                .bottomParas:last-child {
                     font-size: 60%;
                 }
             }
@@ -343,7 +291,7 @@ $whitecolor: white;
                     font-size: 60%;
                 }
     
-                .bottomParas1 {
+                .bottomParas:last-child {
                     font-size: 50%;
                 }
             }
@@ -399,7 +347,7 @@ $whitecolor: white;
                     font-size: 60%;
                 }
     
-                .bottomParas1 {
+                .bottomParas:last-child {
                     font-size: 50%;
                 }
             }

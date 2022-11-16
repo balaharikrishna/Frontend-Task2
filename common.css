@@ -34,19 +34,12 @@ body {
 }
 .Grid-TopRightMenu .TopMenus .TopMenus-span a:hover {
   background-color: rgba(1, 15, 29, 0.8);
-  padding: 2px;
   border-radius: 5px;
 }
-.Grid-TopRightMenu .TopMenus .TopMenus-span1 {
+.Grid-TopRightMenu .TopMenus .TopMenus-span:last-child {
   padding-left: 2%;
-}
-.Grid-TopRightMenu .TopMenus .TopMenus-span1 .TopMenusLink {
-  color: white;
-}
-.Grid-TopRightMenu .TopMenus .TopMenus-span1 a:hover {
-  background-color: rgba(1, 15, 29, 0.8);
-  padding: 2px;
-  border-radius: 5px;
+  padding-right: 0px;
+  border-right: none;
 }
 
 .GridNavSection {
@@ -71,31 +64,36 @@ body {
 .GridNavSection .navoptionsGrid {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+  margin: 5px 5px 5px 0;
 }
-.GridNavSection .navoptionsGrid > .navoptionsdiv {
+.GridNavSection .navoptionsGrid .navoptionsdiv {
   text-align: center;
 }
-.GridNavSection .navoptionsGrid > .navoptionsdiv a:hover {
-  background-color: rgba(72, 104, 129, 0.7);
-  border-radius: 5px;
-  color: white;
-}
-.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a,
-.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+.GridNavSection .navoptionsGrid .navoptionsdiv .nav-a {
   color: rgb(170, 202, 225);
   text-decoration: none;
 }
-.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter,
-.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeter {
+.GridNavSection .navoptionsGrid .navoptionsdiv .nav-a .delimeter {
   cursor: pointer;
   font-weight: normal;
   padding-right: 15px;
   background: transparent url(./Images/delimeter.png) no-repeat right;
 }
-.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-  cursor: pointer;
-  font-weight: normal;
-  padding-right: 15px;
+.GridNavSection .navoptionsGrid .navoptionsdiv .nav-a .delimeter:hover {
+  background-color: rgba(72, 104, 129, 0.7);
+  border-radius: 5px;
+  color: white;
+}
+.GridNavSection .navoptionsGrid .navoptionsdiv:last-child .nav-a:last-child {
+  text-align: center;
+}
+.GridNavSection .navoptionsGrid .navoptionsdiv:last-child .nav-a:last-child .delimeter:last-child {
+  background-image: none;
+}
+.GridNavSection .navoptionsGrid .navoptionsdiv:last-child .nav-a:last-child .delimeter:last-child:hover {
+  background-color: rgba(72, 104, 129, 0.7);
+  border-radius: 5px;
+  color: white;
 }
 
 .Gridfooter {
@@ -121,27 +119,21 @@ body {
   .GridNavSection .logosection .logolink .logo {
     width: 180px;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv {
-    line-height: 50px;
+  .GridNavSection .navoptionsGrid .navoptionsdiv {
+    line-height: 22px;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
-    font-size: 15px;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 15px;
+  .GridNavSection .navoptionsGrid .navoptionsdiv .nav-a .delimeter {
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 850px) and (max-width: 1015px) {
   .GridNavSection .logosection .logolink .logo {
     width: 130px;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv {
-    line-height: 40px;
+  .GridNavSection .navoptionsGrid .navoptionsdiv {
+    line-height: 25px;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
-    font-size: 12px;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+  .GridNavSection .navoptionsGrid .navoptionsdiv .nav-a .delimeter {
     font-size: 12px;
   }
 }
@@ -154,15 +146,17 @@ body {
   }
   .GridNavSection .navoptionsGrid {
     grid-template-columns: auto auto auto;
+    padding-right: 8px;
+    margin: 0;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv {
-    line-height: 30px;
+  .GridNavSection .navoptionsGrid .navoptionsdiv {
+    line-height: 20px;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
+  .GridNavSection .navoptionsGrid .navoptionsdiv .nav-a .delimeter {
     font-size: 12px;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 12px;
+  .GridNavSection .navoptionsGrid .navoptionsdiv:nth-child(3) .nav-a .delimeter {
+    background-image: none;
   }
 }
 @media only screen and (min-width: 520px) and (max-width: 660px) {
@@ -174,15 +168,19 @@ body {
   }
   .GridNavSection .navoptionsGrid {
     grid-template-columns: auto auto;
+    padding-right: 8px;
+    margin: 0;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv {
-    line-height: 25px;
+  .GridNavSection .navoptionsGrid .navoptionsdiv {
+    line-height: 20px;
+    height: 33px;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
+  .GridNavSection .navoptionsGrid .navoptionsdiv .nav-a .delimeter {
     font-size: 11px;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 11px;
+  .GridNavSection .navoptionsGrid .navoptionsdiv:nth-child(2) .nav-a .delimeter, .GridNavSection .navoptionsGrid .navoptionsdiv:nth-child(4) .nav-a .delimeter {
+    background-image: none;
+    text-align: right;
   }
 }
 @media only screen and (min-width: 100px) and (max-width: 520px) {
@@ -200,19 +198,21 @@ body {
   .GridNavSection .navoptionsGrid {
     grid-template-columns: none;
     grid-template-rows: auto auto auto auto auto;
-    padding-bottom: 1%;
+    padding: 0 8px 1% 8px;
+    margin: 0;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv {
-    line-height: 35px;
+  .GridNavSection .navoptionsGrid .navoptionsdiv {
+    line-height: 25px;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeter {
+  .GridNavSection .navoptionsGrid .navoptionsdiv .nav-a .delimeter {
     font-size: 11px;
     padding-right: 0px;
     background: none;
+    margin: 2% 35% 0 35%;
   }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
+  .GridNavSection .navoptionsGrid .navoptionsdiv:last-child .nav-a:last-child .delimeter:last-child {
     font-size: 11px;
-    padding-right: 0px;
+    margin: 2% 35% 2% 35%;
   }
 }
 @media only screen and (min-width: 630px) {
@@ -277,7 +277,7 @@ body {
   .Grid-TopRightMenu .TopMenus .TopMenus-span {
     font-size: 55%;
   }
-  .Grid-TopRightMenu .TopMenus .TopMenus-span1 {
+  .Grid-TopRightMenu .TopMenus .TopMenus-span:last-child {
     font-size: 55%;
   }
 }
@@ -289,7 +289,7 @@ body {
   .Grid-TopRightMenu .TopMenus .TopMenus-span {
     font-size: 70%;
   }
-  .Grid-TopRightMenu .TopMenus .TopMenus-span1 {
+  .Grid-TopRightMenu .TopMenus .TopMenus-span:last-child {
     font-size: 70%;
   }
 }
@@ -301,7 +301,7 @@ body {
   .Grid-TopRightMenu .TopMenus .TopMenus-span {
     font-size: 47%;
   }
-  .Grid-TopRightMenu .TopMenus .TopMenus-span1 {
-    font-size: 47%;
+  .Grid-TopRightMenu .TopMenus .TopMenus-span:last-child {
+    font-size: 70%;
   }
 }/*# sourceMappingURL=common.css.map */

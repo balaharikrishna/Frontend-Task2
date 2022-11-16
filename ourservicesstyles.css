@@ -1,13 +1,20 @@
-.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterThird, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeterThird {
+.GridNavSection .navoptionsGrid .navoptionsdiv:nth-child(3) .nav-a .delimeter {
   cursor: pointer;
   font-weight: normal;
-  padding: 3px 15px;
+  padding-right: 15px;
   background: transparent url(./Images/delimeter.png) no-repeat right;
   background-color: rgba(72, 104, 129, 0.7);
   border-radius: 5px;
   color: white;
 }
 
+@media only screen and (min-width: 100px) and (max-width: 520px) {
+  .GridNavSection .navoptionsGrid .navoptionsdiv:nth-child(3) .nav-a .delimeter {
+    padding-right: 0px;
+    margin: 2% 35% 0 35%;
+    background-image: none;
+  }
+}
 .MainContent {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -87,7 +94,7 @@
   font-size: 80%;
   padding-left: 40px;
 }
-.MainContent .MainContentInnerGrids .RightBottomSection .bottomParas1 {
+.MainContent .MainContentInnerGrids .RightBottomSection .bottomParas:last-child {
   cursor: pointer;
   color: white;
   font-size: 65%;
@@ -100,52 +107,11 @@
   border-radius: 5px;
   border: 1px solid #0e3851;
 }
-.MainContent .MainContentInnerGrids .RightBottomSection .bottomParas1 .rightarrow {
+.MainContent .MainContentInnerGrids .RightBottomSection .bottomParas:last-child .rightarrow {
   width: 5px;
   padding-left: 5px;
 }
 
-@media only screen and (min-width: 1015px) {
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterThird {
-    font-size: 15px;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 15px;
-  }
-}
-@media only screen and (min-width: 850px) and (max-width: 1015px) {
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterThird {
-    font-size: 12px;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 660px) and (max-width: 850px) {
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterThird {
-    font-size: 12px;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 520px) and (max-width: 660px) {
-  .navoptionsGrid > .navoptionsdiv .nav-a .delimeterThird {
-    font-size: 11px;
-  }
-  .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 11px;
-  }
-}
-@media only screen and (min-width: 100px) and (max-width: 520px) {
-  .navoptionsGrid > .navoptionsdiv .nav-a .delimeterThird {
-    font-size: 11px;
-    background-image: none !important;
-  }
-  .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 11px;
-  }
-}
 @media only screen and (min-width: 1015px) {
   .MainContent .MainContentGrid1 {
     padding: 10px 10px 100px 10px;
@@ -167,7 +133,7 @@
   .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas {
     font-size: 80%;
   }
-  .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas1 {
+  .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas:last-child {
     font-size: 65%;
   }
 }
@@ -198,7 +164,7 @@
   .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas {
     font-size: 70%;
   }
-  .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas1 {
+  .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas:last-child {
     font-size: 60%;
   }
 }
@@ -236,7 +202,7 @@
   .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas {
     font-size: 60%;
   }
-  .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas1 {
+  .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas:last-child {
     font-size: 50%;
   }
 }
@@ -275,7 +241,7 @@
   .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas {
     font-size: 60%;
   }
-  .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas1 {
+  .MainContent .MainContentInnerGrids .RightBottomSection .bottomParas:last-child {
     font-size: 50%;
   }
 }/*# sourceMappingURL=ourservicesstyles.css.map */
