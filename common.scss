@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-//variables
-$whitecolor: white;
-$whiteborder:1px solid white;
-$pointer:pointer;
+@import "./variables.scss";
 
 body {
     margin: 0 15%;
@@ -31,7 +28,7 @@ body {
         background-color: rgba(10, 44, 68, 0.5);
         color: $whitecolor;
         height: 25px;
-        cursor: $pointer;
+        cursor: pointer;
 
         .TopMenus-span {
             border-right: $whiteborder;
@@ -40,25 +37,21 @@ body {
             .TopMenusLink {
                 color: $whitecolor;
             }
+
             a:hover {
                 background-color: rgba(1, 15, 29, 0.8);
-                padding: 2px;
                 border-radius: 5px;
-              }
-        }
-
-        .TopMenus-span1 {
-            padding-left: 2%;
-
-            .TopMenusLink {
-                color: $whitecolor;
             }
-            a:hover {
-                background-color: rgba(1, 15, 29, 0.8);
-                padding: 2px;
-                border-radius: 5px;
-              }
+
+            &:last-child {
+                padding-left: 2%;
+                padding-right: 0px;
+                border-right: none;
+
+            }
         }
+
+
     }
 }
 
@@ -76,7 +69,7 @@ body {
 
         .logolink {
             .logo {
-                cursor: $pointer;
+                cursor: pointer;
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -89,35 +82,46 @@ body {
     .navoptionsGrid {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
-    }
+        margin: 5px 5px 5px 0;
 
-    .navoptionsGrid>.navoptionsdiv {
-        text-align: center;
-        a:hover{
-                background-color: rgb(72, 104, 129, 0.7);
-                border-radius: 5px;
-                color: $whitecolor;
-        }
+        .navoptionsdiv {
+            text-align: center;
 
-        .nav-a,
-        .nav-aLast {
-            color: rgba(170, 202, 225, 255);
-            text-decoration: none;
+            .nav-a {
+                color: rgba(170, 202, 225, 255);
+                text-decoration: none;
 
-            .delimeter {
-                cursor: $pointer;
-                font-weight: normal;
-                padding-right: 15px;
-                background: transparent url(./Images/delimeter.png) no-repeat right;
+                .delimeter {
+                    cursor: pointer;
+                    font-weight: normal;
+                    padding-right: 15px;
+                    background: transparent url(./Images/delimeter.png) no-repeat right;
+
+                    &:hover {
+                        background-color: rgb(72, 104, 129, 0.7);
+                        border-radius: 5px;
+                        color: $whitecolor;
+                    }
+                }
+            }
+
+            &:last-child {
+                .nav-a:last-child {
+                    text-align: center;
+
+                    .delimeter:last-child {
+                        background-image: none;
+
+                        &:hover {
+                            background-color: rgb(72, 104, 129, 0.7);
+                            border-radius: 5px;
+                            color: $whitecolor;
+                        }
+
+                    }
+                }
             }
         }
-
-        .nav-aLast {
-            cursor: $pointer;
-            font-weight: normal;
-            padding-right: 15px;
-        }
-
     }
 
 }
@@ -138,7 +142,7 @@ body {
 
     .footerdivLinks {
         .footerParaLinks {
-            
+
             .footerListLink1 {
                 border-right: $whiteborder;
             }
@@ -168,17 +172,16 @@ body {
             }
         }
 
-        .navoptionsGrid>.navoptionsdiv {
-            line-height: 50px;
+        .navoptionsGrid {
+            .navoptionsdiv {
+                line-height: 22px;
 
-            .nav-a {
-                .delimeter {
-                    font-size: 15px;
+                .nav-a {
+                    .delimeter {
+                        font-size: 14px;
+                    }
                 }
-            }
 
-            .nav-aLast {
-                font-size: 15px;
             }
         }
     }
@@ -194,17 +197,18 @@ body {
             }
         }
 
-        .navoptionsGrid>.navoptionsdiv {
-            line-height: 40px;
+        .navoptionsGrid {
+            .navoptionsdiv {
+                line-height: 25px;
 
-            .nav-a {
-                .delimeter {
-                    font-size: 12px;
+                .nav-a {
+                    .delimeter {
+                        font-size: 12px;
+                    }
                 }
-            }
 
-            .nav-aLast {
-                font-size: 12px;
+
+
             }
         }
     }
@@ -222,21 +226,34 @@ body {
             }
         }
 
+
+
         .navoptionsGrid {
             grid-template-columns: auto auto auto;
-        }
+            padding-right: 8px;
+            margin: 0;
 
-        .navoptionsGrid>.navoptionsdiv {
-            line-height: 30px;
+            .navoptionsdiv {
+                line-height: 20px;
 
-            .nav-a {
-                .delimeter {
-                    font-size: 12px;
+                .nav-a {
+                    .delimeter {
+                        font-size: 12px;
+
+                    }
                 }
-            }
 
-            .nav-aLast {
-                font-size: 12px;
+                &:nth-child(3) {
+                    .nav-a {
+                        .delimeter {
+                            background-image: none;
+
+                        }
+                    }
+                }
+
+
+
             }
         }
     }
@@ -254,21 +271,32 @@ body {
             }
         }
 
+
+
         .navoptionsGrid {
             grid-template-columns: auto auto;
-        }
+            padding-right: 8px;
+            margin: 0;
 
-        .navoptionsGrid>.navoptionsdiv {
-            line-height: 25px;
+            .navoptionsdiv {
+                line-height: 20px;
+                height: 33px;
 
-            .nav-a {
-                .delimeter {
-                    font-size: 11px;
+                .nav-a {
+                    .delimeter {
+                        font-size: 11px;
+                    }
                 }
-            }
 
-            .nav-aLast {
-                font-size: 11px;
+                &:nth-child(2),
+                &:nth-child(4) {
+                    .nav-a {
+                        .delimeter {
+                            background-image: none;
+                            text-align: right;
+                        }
+                    }
+                }
             }
         }
     }
@@ -293,23 +321,31 @@ body {
         .navoptionsGrid {
             grid-template-columns: none;
             grid-template-rows: auto auto auto auto auto;
-            padding-bottom: 1%;
-        }
+            padding: 0 8px 1% 8px;
+            margin: 0;
 
-        .navoptionsGrid>.navoptionsdiv {
-            line-height: 35px;
+            .navoptionsdiv {
+                line-height: 25px;
 
-            .nav-a {
-                .delimeter {
-                    font-size: 11px;
-                    padding-right: 0px;
-                    background: none
+                .nav-a {
+                    .delimeter {
+                        font-size: 11px;
+                        padding-right: 0px;
+                        background: none;
+                        margin: 2% 35% 0 35%;
+                    }
                 }
-            }
 
-            .nav-aLast {
-                font-size: 11px;
-                padding-right: 0px;
+
+                &:last-child {
+                    .nav-a:last-child {
+                        .delimeter:last-child {
+                            font-size: 11px;
+                            margin: 2% 35% 2% 35%;
+
+                        }
+                    }
+                }
             }
         }
     }
@@ -329,6 +365,7 @@ body {
         .footerdivLinks {
             .footerParaLinks {
                 margin: 5px;
+
                 .footerListLink1 {
                     padding: 0 5px 0 10px;
                 }
@@ -345,7 +382,8 @@ body {
 
     }
 }
-@media only screen and (min-width: 485px) and (max-width: 630px){
+
+@media only screen and (min-width: 485px) and (max-width: 630px) {
     .Gridfooter {
 
 
@@ -358,6 +396,7 @@ body {
         .footerdivLinks {
             .footerParaLinks {
                 margin: 0px; //overriding
+
                 .footerListLink1 {
                     padding: 0 5px 0 10px;
                 }
@@ -374,25 +413,31 @@ body {
 
     }
 }
-@media only screen and (min-width: 100px) and (max-width: 485px){
+
+@media only screen and (min-width: 100px) and (max-width: 485px) {
     .Gridfooter {
         grid-template-rows: auto auto;
         grid-template-columns: none;
+
         .footerdivPara {
             margin-bottom: -10px;
+
             .footerPara {
                 font-size: 50%;
                 float: none;
                 text-align: center;
             }
         }
+
         .footerdivLinks {
             .footerParaLinks {
                 margin: 0px; //overriding
                 text-align: center;
+
                 .footerListLink1 {
                     padding: 0 5px 0 10px;
                 }
+
                 .footerListLink1,
                 .footerListLink2 {
                     font-size: 50%;
@@ -403,49 +448,57 @@ body {
 }
 
 //toprightmenuMobileview
-@media only screen and (min-width: 630px){
+@media only screen and (min-width: 630px) {
     .Grid-TopRightMenu {
-    
+
         .TopMenus {
 
             width: 230px;
+
             .TopMenus-span {
                 font-size: 55%;
+
+                &:last-child {
+                    font-size: 55%;
+                }
             }
-    
-            .TopMenus-span1 {
-                font-size: 55%;
-            }
+
         }
     }
 }
-@media only screen and (min-width: 420px) and (max-width: 630px){
-    .Grid-TopRightMenu {    
+
+@media only screen and (min-width: 420px) and (max-width: 630px) {
+    .Grid-TopRightMenu {
         .TopMenus {
             width: 100%;
             text-align: center;
+
             .TopMenus-span {
                 font-size: 70%;
+
+                &:last-child {
+                    font-size: 70%;
+                }
             }
-    
-            .TopMenus-span1 {
-                font-size: 70%;
-            }
+
         }
     }
 }
-@media only screen and (min-width: 100px) and (max-width: 420px){
-    .Grid-TopRightMenu {    
+
+@media only screen and (min-width: 100px) and (max-width: 420px) {
+    .Grid-TopRightMenu {
         .TopMenus {
             width: 100%;
             text-align: center;
+
             .TopMenus-span {
                 font-size: 47%;
+
+                &:last-child {
+                    font-size: 70%;
+                }
             }
-    
-            .TopMenus-span1 {
-                font-size: 47%;
-            }
+
         }
     }
 }
