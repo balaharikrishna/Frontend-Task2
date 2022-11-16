@@ -1,4 +1,4 @@
-.GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeterfirst {
+.GridNavSection .navoptionsGrid .navoptionsdiv:first-child .nav-a .delimeter {
   cursor: pointer;
   font-weight: normal;
   padding-right: 15px;
@@ -9,9 +9,10 @@
 }
 
 @media only screen and (min-width: 100px) and (max-width: 520px) {
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst, .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast .delimeterfirst {
+  .GridNavSection .navoptionsGrid .navoptionsdiv:first-child .nav-a .delimeter {
     padding-right: 0px;
     margin: 2% 35% 0 35%;
+    background-image: none;
   }
 }
 .Grid-TransperantContent {
@@ -49,47 +50,6 @@
   color: rgb(148, 193, 220);
 }
 
-@media only screen and (min-width: 1015px) {
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
-    font-size: 15px;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 15px;
-  }
-}
-@media only screen and (min-width: 850px) and (max-width: 1015px) {
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
-    font-size: 12px;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 11px;
-  }
-}
-@media only screen and (min-width: 660px) and (max-width: 850px) {
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
-    font-size: 12px;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 12px;
-  }
-}
-@media only screen and (min-width: 520px) and (max-width: 660px) {
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
-    font-size: 11px;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 11px;
-  }
-}
-@media only screen and (min-width: 100px) and (max-width: 520px) {
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-a .delimeterfirst {
-    font-size: 11px;
-    background-image: none;
-  }
-  .GridNavSection .navoptionsGrid > .navoptionsdiv .nav-aLast {
-    font-size: 11px;
-  }
-}
 @media only screen and (min-width: 784px) {
   .Grid-TransperantContent .TransparentP {
     font-size: 30px;
